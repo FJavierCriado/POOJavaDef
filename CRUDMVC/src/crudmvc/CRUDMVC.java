@@ -9,6 +9,7 @@ package crudmvc;
  *
  * @author usuario
  */
+import modelo.Conexion;
 public class CRUDMVC {
 
     /**
@@ -16,6 +17,8 @@ public class CRUDMVC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Conexion con=new Conexion();
+        con.getConextion();
     }
     
 }
