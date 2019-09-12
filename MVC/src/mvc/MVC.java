@@ -5,10 +5,15 @@
  */
 package mvc;
 
+import controlador.Controlador;
+import modelo.Modelo;
+import vista.Vista;
+
 /**
  *
  * @author usuario
  */
+
 public class MVC {
 
     /**
@@ -16,6 +21,12 @@ public class MVC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Modelo mod= new Modelo();
+        Vista view=new Vista();
+        Controlador ctrl= new Controlador(view,mod);
+        
+        ctrl.iniciar();
+        view.setVisible(true);
     }
     
 }
