@@ -1,0 +1,23 @@
+Se tendrá una base de datos con una tabla donde se almacenará la información de los 
+clientes de nuestro negocio. Desde una interfaz gráfica, un usuario podrá listar, añadir, 
+modificar o eliminar los diversos clientes.
+
+La información a almacenar de los clientes será: nombre, apellidos y NIF
+
+Tanto la vista como el controlador estarán implementados en Java mediante Eclipse. 
+Sin embargo, debido a su simplicidad, el modelo se implementará en MySQL. Se hará uso de 
+procesos almacenados (stored procedures) en la base de datos.
+
+- Conexion. Se encargará de realizar la conexión al servidor MySQL.
+
+- View. Se encargará de la creación de la interfaz gráfica.
+
+- Principal. Contendrá la función main que se encargará de la creación de los objetos 
+necesarios y de la ejecución de los diversos métodos.
+
+- Controller. Se encargará de recoger los eventos desencadenados por la interfaz gráfica, 
+se los comunicará a nuestro modelo y actualizará si fuere necesario la interfaz. Como se 
+puede comprobar, actúa como intermediario entre la vista y el modelo.
+
+Puesto que el modelo se tratará de forma diferente, no generará ninguna clase para tal fin. 
+Como se indicó anteriormente, el modelo estará implementado en la base de datos MySQL.
